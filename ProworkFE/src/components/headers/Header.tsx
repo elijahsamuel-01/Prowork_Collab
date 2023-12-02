@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
@@ -23,9 +24,11 @@ const Header = () => {
         <div className="h-[30px] w-[70px] flex items-center justify-center hover:bg-slate-200 rounded-md text-sm font-medium">
           Log In
         </div>
-        <button className="mx-1 h-[30px] w-[100px] text-white font-bold bg-red-600 flex items-center justify-center rounded-md hover:bg-red-700">
-          Start for Free
-        </button>
+        <Link to="/signup">
+          <button className="mx-1 h-[30px] w-[100px] text-white font-bold bg-red-600 flex items-center justify-center rounded-md hover:bg-red-700">
+            Start for Free
+          </button>
+        </Link>
       </div>
     </div>
   );
