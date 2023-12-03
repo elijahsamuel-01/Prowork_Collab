@@ -5,6 +5,8 @@ import LandingPage from "../pages/LandingPage";
 import Layout2 from "../components/Layout2";
 import Register from "../pages/auth/Register";
 import Sign_In from "../pages/auth/Sign_In";
+import AddTask from "../pages/AddTask";
+import AddProject from "../pages/AddProject";
 
 export const mainRouter = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ export const mainRouter = createBrowserRouter([
     path: "/signup",
     element: <Register />,
   },
+  // {
+  //   path: "/addproject",
+  //   element: <AddProject />,
+  // },
+  // {
+  //   path: "/addtask",
+  //   element: <AddTask />,
+  // },
   {
     path: "/signin",
     element: <Sign_In />,

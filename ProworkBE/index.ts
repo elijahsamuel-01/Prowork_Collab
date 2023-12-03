@@ -4,7 +4,7 @@ import { mainConnection } from "./utils/dbConfig";
 import { mainApp } from "./mainApp";
 
 const app: Application = express();
-const port: number = 2277;
+const port: number = 4077;
 
 app.use(express.json());
 app.use(cors());

@@ -1,6 +1,6 @@
 import { connect } from "mongoose";
 
-const URL = "mongodb://localhost:27017/flowDB";
+const URL = "mongodb://localhost:27017/ProWrokDB";
 
 export const mainConnection = async () => {
   try {
