@@ -4,7 +4,16 @@ const URL: string = "http://localhost:4077/api/v1";
 
 export const createAccount = async (data: any) => {
   try {
-    return await axios.post(`${URL}/create-user`, data).then((res: any) => {
+    return await axios.post(`${URL}/create-user-freemo`, data).then((res: any) => {
+      return res.data;
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+export const Viewone = async (userID: any) => {
+  try {
+    return await axios.get(`${URL}/view-one-user/${userID}`).then((res: any) => {
       return res.data;
     });
   } catch (error) {
