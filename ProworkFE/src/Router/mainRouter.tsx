@@ -7,11 +7,16 @@ import Register from "../pages/auth/Register";
 import Sign_In from "../pages/auth/Sign_In";
 import AddTask from "../pages/AddTask";
 import AddProject from "../pages/AddProject";
+import PrivateRouter from "./PrivateRouter";
 
 export const mainRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Layout2 />,
+    element: (
+      <PrivateRouter>
+        <Layout2 />
+      </PrivateRouter>
+    ),
 
     children: [
       {
